@@ -29,4 +29,11 @@ public class BankAccount {
     public Object getAccountNumber() {
         return accountNumber;
     }
+    public double obtainBalance() {
+        return getBalance();
+    }
+    public void addInterest() {
+        double value = balance * interest;
+        balance += value;
+    }
 }
